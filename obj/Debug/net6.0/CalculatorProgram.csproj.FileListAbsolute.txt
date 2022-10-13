@@ -1,0 +1,15 @@
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\bin\Debug\net6.0\CalculatorProgram.exe
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\bin\Debug\net6.0\CalculatorProgram.deps.json
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\bin\Debug\net6.0\CalculatorProgram.runtimeconfig.json
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\bin\Debug\net6.0\CalculatorProgram.dll
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\bin\Debug\net6.0\CalculatorProgram.pdb
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\obj\Debug\net6.0\CalculatorProgram.csproj.AssemblyReference.cache
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\obj\Debug\net6.0\CalculatorProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\obj\Debug\net6.0\CalculatorProgram.AssemblyInfoInputs.cache
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\obj\Debug\net6.0\CalculatorProgram.AssemblyInfo.cs
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\obj\Debug\net6.0\CalculatorProgram.csproj.CoreCompileInputs.cache
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\obj\Debug\net6.0\CalculatorProgram.dll
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\obj\Debug\net6.0\refint\CalculatorProgram.dll
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\obj\Debug\net6.0\CalculatorProgram.pdb
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\obj\Debug\net6.0\CalculatorProgram.genruntimeconfig.cache
+C:\Users\isakz\OneDrive\Skrivbord\TUC Prog Projekt\CalculatorProgram\obj\Debug\net6.0\ref\CalculatorProgram.dll
