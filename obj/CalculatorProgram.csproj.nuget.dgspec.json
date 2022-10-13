@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\isakz\\OneDrive\\Skrivbord\\TUC Prog Projekt\\CalculatorProgram\\CalculatorProgram.csproj": {}
+    "C:\\Users\\isakz\\OneDrive\\Documents\\GitHub\\Calculator\\CalculatorProgram.csproj": {}
   },
   "projects": {
-    "C:\\Users\\isakz\\OneDrive\\Skrivbord\\TUC Prog Projekt\\CalculatorProgram\\CalculatorProgram.csproj": {
+    "C:\\Users\\isakz\\OneDrive\\Documents\\GitHub\\Calculator\\CalculatorProgram.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\isakz\\OneDrive\\Skrivbord\\TUC Prog Projekt\\CalculatorProgram\\CalculatorProgram.csproj",
+        "projectUniqueName": "C:\\Users\\isakz\\OneDrive\\Documents\\GitHub\\Calculator\\CalculatorProgram.csproj",
         "projectName": "CalculatorProgram",
-        "projectPath": "C:\\Users\\isakz\\OneDrive\\Skrivbord\\TUC Prog Projekt\\CalculatorProgram\\CalculatorProgram.csproj",
+        "projectPath": "C:\\Users\\isakz\\OneDrive\\Documents\\GitHub\\Calculator\\CalculatorProgram.csproj",
         "packagesPath": "C:\\Users\\isakz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\isakz\\OneDrive\\Skrivbord\\TUC Prog Projekt\\CalculatorProgram\\obj\\",
+        "outputPath": "C:\\Users\\isakz\\OneDrive\\Documents\\GitHub\\Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

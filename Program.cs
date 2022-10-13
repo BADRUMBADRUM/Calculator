@@ -8,8 +8,7 @@ Console.Clear();
 
 // En lista för att spara historik för räkningar
 List<String> ListOfCalculations = new List<string>();
-
-
+//Varialer som används för att spara ner värden för uträckningen
 float ValueOne;
 float ValueTwo;
 float Result = 0.0f;
@@ -19,14 +18,16 @@ String YesOrNoString;
 List<String> CurrentCalculationSave;
 bool KeepCounting = true;
 
+//En while loop för att se om användaren vill fortsätta räkna i konsollen
 while(KeepCounting == true)
 {
     // Välkomnande meddelande
     Console.WriteLine("Welcome to your calculator! Put in your calculation for example(x*x)");
 
-    //OBS! Användaren måsta mata in ett tal för att kunna ta sig vidare i programmet!
+    //Användaren matar in en beräkning som sparas ner i en string
     CurrentCalculationInput = Console.ReadLine();
 
+    //Contains används för att ta reda på ekvation användaren vill göra
     if(CurrentCalculationInput.Contains("*"))
     {
         EquationSelector = "*";
@@ -48,23 +49,28 @@ while(KeepCounting == true)
         EquationSelector = "Wrong";
     }
 
+    //En lista med dom nuvarande talen som ska räknas ut görs för att kunna indexera talen och spara ner dom som float variabler
+    //Equation selector används också för att indexera talen
     CurrentCalculationSave = new List<String>(CurrentCalculationInput.Split(EquationSelector));
+    //Jag använder mig av TryParse funktionen för att se om inmatningen faktist är tal, annars skickas användaren tillbacks för att skriva om
     if (float.TryParse(CurrentCalculationSave[0], out ValueOne) == false || float.TryParse(CurrentCalculationSave[1], out ValueTwo) == false || EquationSelector == "Wrong")
     {
         Console.WriteLine("Cant continue without inputing correct syntax");
     }
     else if(float.Parse(CurrentCalculationSave[0], CultureInfo.InvariantCulture.NumberFormat) == 0 && float.Parse(CurrentCalculationSave[0], CultureInfo.InvariantCulture.NumberFormat) == 0 && EquationSelector == "/")
     {
-        // Funktion kollar om input syntax är 0/0 och om den är det får användaren skriva in nya värden
+        // Funktion kollar om input syntax är 0/0 och om den är det skickas användaren tillbacks till start för att skriva in nya värden
         Console.WriteLine("Ivalid cant divide zero with zero");
     }
     else
     {
-        // Talen i beräkningen sparas ner i int variabler
+        // Talen i beräkningen sparas ner i float variabler
+        //Man skulle använda sig av Parse direkt och inte spara ner värdena i float variabler för att spara minne,
+        //men jag anser att det ser bättre och är mer lättförståligt att spara ner dem i float variabler
         ValueOne = float.Parse(CurrentCalculationSave[0], CultureInfo.InvariantCulture.NumberFormat);
         ValueTwo = float.Parse(CurrentCalculationSave[1], CultureInfo.InvariantCulture.NumberFormat);
 
-
+        //Uträckning görs
         if (EquationSelector == "/")
         {
             Result = ValueOne / ValueTwo;
@@ -85,7 +91,7 @@ while(KeepCounting == true)
         // Resulatet läggs in i listan
         ListOfCalculations.Add(Convert.ToString(Result));
 
-        //Visa resultat
+        //Visa resultatet
         Console.WriteLine("Your Result:" + Result.ToString());
 
         //Fråga användaren om den vill visa tidigare resultat.
@@ -112,4 +118,3 @@ while(KeepCounting == true)
         }
     }
 }
-
