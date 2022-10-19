@@ -27,27 +27,8 @@ while(KeepCounting == true)
     //Användaren matar in en beräkning som sparas ner i en string
     CurrentCalculationInput = Console.ReadLine();
 
-    //Contains används för att ta reda på ekvation användaren vill göra
-    if(CurrentCalculationInput.Contains("*"))
-    {
-        EquationSelector = "*";
-    }
-    else if(CurrentCalculationInput.Contains("+"))
-    {
-        EquationSelector = "+";
-    }
-    else if(CurrentCalculationInput.Contains("-"))
-    {
-        EquationSelector = "-";
-    }
-    else if(CurrentCalculationInput.Contains("/"))
-    {
-        EquationSelector = "/";
-    }
-    else
-    {
-        EquationSelector = "Wrong";
-    }
+    //Funktion för att se vilken ekvation användaren vill göra
+    SetEquationSelector();
 
     //En lista med dom nuvarande talen som ska räknas ut görs för att kunna indexera talen och spara ner dom som float variabler
     //Equation selector används också för att indexera talen
@@ -70,23 +51,25 @@ while(KeepCounting == true)
         ValueOne = float.Parse(CurrentCalculationSave[0], CultureInfo.InvariantCulture.NumberFormat);
         ValueTwo = float.Parse(CurrentCalculationSave[1], CultureInfo.InvariantCulture.NumberFormat);
 
-        //Uträckning görs
-        if (EquationSelector == "/")
-        {
-            Result = ValueOne / ValueTwo;
-        }
-        else if (EquationSelector == "+")
-        {
-            Result = ValueOne + ValueTwo;
-        }
-        else if (EquationSelector == "-")
-        {
-            Result = ValueOne - ValueTwo;
-        }
-        else if (EquationSelector == "*")
-        {
-            Result = ValueOne * ValueTwo;
-        }
+        ////Uträckning görs
+        //if (EquationSelector == "/")
+        //{
+        //    Result = ValueOne / ValueTwo;
+        //}
+        //else if (EquationSelector == "+")
+        //{
+        //    Result = ValueOne + ValueTwo;
+        //}
+        //else if (EquationSelector == "-")
+        //{
+        //    Result = ValueOne - ValueTwo;
+        //}
+        //else if (EquationSelector == "*")
+        //{
+        //    Result = ValueOne * ValueTwo;
+        //}
+
+        Calculate();
 
         // Resulatet läggs in i listan
         ListOfCalculations.Add(Convert.ToString(Result));
@@ -116,5 +99,52 @@ while(KeepCounting == true)
         {
             KeepCounting = false;
         }
+    }
+}
+
+
+void SetEquationSelector()
+{
+    //Contains används för att ta reda på ekvation användaren vill göra
+    if (CurrentCalculationInput.Contains("*"))
+    {
+        EquationSelector = "*";
+    }
+    else if (CurrentCalculationInput.Contains("+"))
+    {
+        EquationSelector = "+";
+    }
+    else if (CurrentCalculationInput.Contains("-"))
+    {
+        EquationSelector = "-";
+    }
+    else if (CurrentCalculationInput.Contains("/"))
+    {
+        EquationSelector = "/";
+    }
+    else
+    {
+        EquationSelector = "Wrong";
+    }
+}
+
+void Calculate()
+{
+    //Uträckning görs
+    if (EquationSelector == "/")
+    {
+        Result = ValueOne / ValueTwo;
+    }
+    else if (EquationSelector == "+")
+    {
+        Result = ValueOne + ValueTwo;
+    }
+    else if (EquationSelector == "-")
+    {
+        Result = ValueOne - ValueTwo;
+    }
+    else if (EquationSelector == "*")
+    {
+        Result = ValueOne * ValueTwo;
     }
 }
