@@ -7,7 +7,7 @@ Console.Clear();
 // En lista för att spara historik för räkningar
 List<String> ListOfCalculations = new List<string>();
 //Varialer som används för att spara ner värden för uträckningen
-float ValueOne;
+float ValueOne; 
 float ValueTwo;
 float Result = 0.0f;
 String EquationSelector = ""; 
@@ -31,8 +31,11 @@ while(KeepCounting == true)
     //En lista med dom nuvarande talen som ska räknas ut görs för att kunna indexera talen och spara ner dom som float variabler
     //Equation selector används också för att indexera talen
     CurrentCalculationSave = new List<String>(CurrentCalculationInput.Split(EquationSelector));
+
     //Jag använder mig av TryParse funktionen för att se om inmatningen faktist är tal, annars skickas användaren tillbacks för att skriva om
-    if (float.TryParse(CurrentCalculationSave[0], out ValueOne) == false || float.TryParse(CurrentCalculationSave[1], out ValueTwo) == false || EquationSelector == "Wrong")
+    if (float.TryParse(CurrentCalculationSave[0], NumberStyles.Float, CultureInfo.InvariantCulture, out ValueOne) == false 
+    || float.TryParse(CurrentCalculationSave[1], NumberStyles.Float, CultureInfo.InvariantCulture, out ValueTwo) == false 
+    || EquationSelector == "Wrong")
     {
         Console.WriteLine("Cant continue without inputing correct syntax");
     }
