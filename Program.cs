@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using System.Globalization;
+﻿using System.Globalization;
 using System.Runtime.CompilerServices;
 Console.BackgroundColor = ConsoleColor.DarkYellow;
 Console.ForegroundColor = ConsoleColor.Black;
@@ -51,24 +49,7 @@ while(KeepCounting == true)
         ValueOne = float.Parse(CurrentCalculationSave[0], CultureInfo.InvariantCulture.NumberFormat);
         ValueTwo = float.Parse(CurrentCalculationSave[1], CultureInfo.InvariantCulture.NumberFormat);
 
-        ////Uträckning görs
-        //if (EquationSelector == "/")
-        //{
-        //    Result = ValueOne / ValueTwo;
-        //}
-        //else if (EquationSelector == "+")
-        //{
-        //    Result = ValueOne + ValueTwo;
-        //}
-        //else if (EquationSelector == "-")
-        //{
-        //    Result = ValueOne - ValueTwo;
-        //}
-        //else if (EquationSelector == "*")
-        //{
-        //    Result = ValueOne * ValueTwo;
-        //}
-
+        //Funktion för att räkna utt ekvationen
         Calculate();
 
         // Resulatet läggs in i listan
